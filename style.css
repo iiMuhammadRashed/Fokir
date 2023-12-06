@@ -1,0 +1,815 @@
+/* General Style Start */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.clr {
+  clear: both;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: Roboto;
+  color: #555555;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  font-family: Roboto;
+}
+
+/*----------> General Style End ---------->*/
+/*----------> Nav-Bar-Style Start ---------->*/
+nav .nav-bar {
+  width: 100%;
+  z-index: 99;
+}
+
+.nav-container {
+  margin: auto;
+  width: 90%;
+}
+
+nav .nav-bar .nav-logo {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+nav .nav-bar .nav-logo a {
+  color: #ff305b;
+  font-family: Roboto;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+nav .nav-bar .nav-list {
+  float: right;
+  padding-right: 50px;
+  padding: 20px 50px 20px 0px;
+}
+
+nav .nav-bar li {
+  float: left;
+  list-style: none;
+  padding: 0px 10px;
+}
+
+nav .nav-bar li a {
+  font-family: Roboto;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+  font-size: 16px;
+  transition: color 0.7s;
+}
+
+nav .nav-bar li a:hover {
+  color: #ff305b;
+}
+
+/*----------> Nav-Bar-Style End ---------->*/
+/*---------- Home Section Start ----------*/
+.home {
+  background: url(images/slider/slider-01.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+.home-content {
+  text-align: center;
+  padding-top: 250px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0 0 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #333;
+}
+
+.home-content h3 {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.home-content h1 {
+  color: #ff305b;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.home-content h4 {
+  font-size: 26px;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 300;
+  position: relative;
+}
+
+.home-content h4::after {
+  content: "";
+  width: 2px;
+  height: 27px;
+  left: 61%;
+  background-color: white;
+  position: absolute;
+}
+
+/*---------- Home Section End ----------*/
+/*---------- About Section Start ----------*/
+
+.about-section {
+  padding-top: 100px;
+  background-color: rgb(255, 255, 255);
+  height: 90vh;
+}
+
+.about-section .about-section-img {
+  border-radius: 5px;
+  border-color: #555555;
+  border-width: 8px;
+  border-style: solid;
+  position: relative;
+  width: 40%;
+  float: left;
+}
+
+.about-section .about-section-img img {
+  border-radius: 5px;
+  width: 100%;
+  top: 20px;
+  left: 20px;
+  position: relative;
+}
+
+.about-section .about-section-img-overlay {
+  background-color: rgba(0, 0, 0, 0.57);
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 20px;
+  bottom: -20px;
+  transition: 0.6s all;
+  border-radius: 5px;
+}
+
+.about-section .about-section-img-overlay ul {
+  list-style: none;
+  position: relative;
+  top: 50%;
+  left: 30%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-section .about-section-img-overlay li {
+  float: left;
+  list-style: none;
+  padding: 10px;
+}
+
+.about-section .about-section-img-overlay a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.about-section .about-section-img:hover .about-section-img-overlay {
+  left: 20px;
+  height: 100%;
+}
+
+.about-section-img-overlay ul {
+  opacity: 0;
+  transition: 0.2s all;
+}
+
+.about-section .about-section-img:hover .about-section-img-overlay ul {
+  opacity: 1;
+}
+
+.about-section .about-section-img-overlay i {
+  transition: all 0.5s;
+}
+
+.about-section .about-section-img-overlay i:hover {
+  color: #ff305b;
+}
+
+.about-section-content {
+  width: 55%;
+  float: right;
+}
+
+.about-section-content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 25px;
+  padding-left: 13px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.about-section-content h2::after {
+  background: #ff305b;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+
+.about-section-content .about-section-caption {
+  height: 50%;
+}
+
+.about-section-list {
+  margin-bottom: 25px;
+}
+
+.about-section-content .about-section-caption p {
+  border-bottom: 1px dashed #999999;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.about-section-content ul {
+  width: 100%;
+  float: right;
+}
+
+.about-section-content li {
+  list-style: none;
+  text-align: left;
+  font-size: 14px;
+  float: left;
+  width: 50%;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.about-section-content li a {
+  text-decoration: none;
+  color: #7e7e7e;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.about-section-content li a:hover {
+  color: #555555;
+}
+
+.about-section li span {
+  color: #333333;
+  font-weight: 500;
+}
+
+.about-section-content ul li p {
+  border: none;
+}
+
+.btn {
+  display: inline-block;
+}
+
+.about-buttons a {
+  font-size: 14px;
+  background: #ff305b none repeat scroll 0 0;
+  border-radius: 4px;
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 24px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.btn:hover a {
+  background: #ec2403;
+}
+
+/*---------- About Section End ----------/
+/*---------- Section Two Start ----------*/
+.section-two {
+  background-color: #f1f1f1;
+  padding: 100px 0 54px;
+}
+
+.with-lines {
+  position: relative;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.with-lines::after {
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-color: #ff305b;
+  border-style: solid;
+  border-width: 1px 0;
+  padding: 4px 0 5px;
+  width: 70px;
+}
+
+.with-lines::before {
+  content: "";
+  background-color: #ff305b;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  height: 1px;
+  width: 160px;
+}
+
+.section-two-item {
+  width: 25%;
+  padding: 15px;
+  float: left;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.section-two-item i {
+  text-align: center;
+  color: #ff305b;
+  display: block;
+  font-size: 36px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.section-two-item h3 {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.section-two-item p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.section-two-items .section-two-item:hover {
+  background-color: #fff;
+  box-shadow: 0px 15px 20px rgb(0 0 0 / 10%);
+  border-radius: 3px;
+}
+
+.section-two-items .section-two-item:hover i {
+  transform: scale(1.2);
+}
+
+/*---------- Section Two End ----------*/
+/*---------- Section Three Start ----------*/
+.section-three {
+  padding: 100px 0 54px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.section-three-btns {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-three-btns .s3-btn {
+  border: 0;
+  background-color: transparent;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 3px 12px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.section-three-btns button:hover {
+  color: #ec2403;
+  cursor: pointer;
+}
+
+.s3-img-container {
+  padding: 10px;
+  float: left;
+  width: 33%;
+}
+
+.section-three-img {
+  position: relative;
+}
+
+.section-three-img img {
+  width: 100%;
+}
+
+.section-three-img-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.section-three-img-overlay i {
+  color: #ff305b;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.section-three-img:hover {
+  cursor: pointer;
+}
+
+.section-three-img:hover .section-three-img-overlay {
+  opacity: 1;
+}
+
+.section-three-img:hover i {
+  opacity: 1;
+}
+
+/* ---------- Section Three End ---------- */
+/* ---------- Section Four Start ---------- */
+.section-four {
+  padding: 100px 0;
+  background: #f1f1f1;
+}
+
+.section-four .statistic {
+  text-align: center;
+  width: 25%;
+  float: left;
+}
+
+.section-four .statistic i {
+  color: #ff305b;
+  font-size: 26px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+
+.section-four .statistic .num {
+  font-size: 26px;
+  font-weight: 800;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-four .statistic h5 {
+  color: #555555;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* ---------- Section Four End ---------- */
+/* ---------- Section Five Start ---------- */
+.section-five {
+  overflow: hidden;
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.s5-card {
+  width: 80%;
+  margin: auto;
+}
+
+.section-five .section-five-caption h2 {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+}
+
+.section-five .section-five-description {
+  position: relative;
+  background: #f1f1f1;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 40px;
+  position: relative;
+}
+
+.section-five .section-five-description::before {
+  content: "";
+  border-color: #ff305b rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 191px;
+  position: absolute;
+  height: 72px;
+  left: -279px;
+  top: 0;
+  width: 77px;
+  z-index: 1;
+}
+
+.section-five-description .card-img {
+  border-radius: 50%;
+  float: left;
+  margin: 12px auto;
+  overflow: hidden;
+  position: relative;
+  width: 110px;
+  z-index: 20;
+}
+
+.section-five-description .card-img img {
+  width: 100%;
+}
+
+.section-five-description .section-five-description-container {
+  padding-left: 140px;
+}
+
+.section-five-description h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #333;
+}
+
+.section-five-description h4 {
+  font-weight: 600;
+  margin: 0 0 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #777777;
+}
+
+.section-five-description h4 a {
+  color: #777777;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.section-five-description p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #555555;
+  font-style: italic;
+  margin: 0 0 15px;
+}
+
+.section-five-description .rating {
+  color: #f1c30d;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.s5-card .section-five-scroller {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.section-five-scroller .scroller1 {
+  background: #ff305b;
+  border: 1px solid #ff305b;
+  display: inline-block;
+  height: 10px;
+  margin: 0 3px;
+  border-radius: 10px;
+  padding: 4px 12px;
+  width: 10px;
+}
+
+.section-five-scroller .scroller2 {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #ff305b;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin: 0 3px;
+  width: 10px;
+}
+
+/* ---------- Section Five End ---------- */
+/* ---------- Section Six Start ---------- */
+.section-six {
+  padding: 100px 0 70px;
+  background-color: #f1f1f1;
+}
+
+.section-six-item {
+  width: 30%;
+  float: left;
+  position: relative;
+  margin-bottom: 30px;
+  background: #ffffff;
+  line-height: 25px;
+  margin: 10px;
+}
+
+.section-six-item .section-six-media img {
+  width: 100%;
+  height: 190px;
+}
+
+.section-six-item .section-six-media {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-six-item iframe {
+  width: 100%;
+  height: 190px;
+  border: 0;
+}
+
+.section-six-item .section-six-data {
+  padding: 20px;
+}
+
+.section-six-data a {
+  font-size: 22px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-six-data a:hover {
+  color: #ff305b;
+}
+
+.section-six-data p {
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+
+.section-six-data .description {
+  padding-top: 20px;
+}
+
+.section-six-data .section-six-btn {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-six-data .section-six-btn:hover {
+  color: #ff305b;
+}
+
+/* ---------- Section Six End ---------- */
+/* ---------- Section Seven Start ---------- */
+.section-seven {
+  padding: 100px 0;
+}
+
+.section-seven-Form {
+  width: 70%;
+  margin: auto;
+}
+
+.section-seven-Form .name,
+.email {
+  width: 48%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+.section-seven-Form .name {
+  margin-right: 22px;
+}
+
+.section-seven-Form .subject {
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%);
+  margin-top: 10px;
+}
+
+.section-seven-Form textarea {
+  width: 100%;
+  padding: 6px 12px;
+  height: 80px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%);
+  margin-top: 10px;
+}
+
+.section-seven-Form button {
+  background-color: #ff305b;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 38px;
+  transition: 0.3s ease-in-out;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.section-seven-Form button:hover {
+  background-color: #ec2403;
+}
+
+/* ------------ Section Seven End ------------ */
+/* ------------ Footer Start ------------ */
+.footer {
+  background: #333333;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #ffffff;
+  padding: 0 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.footer a:hover {
+  color: #ff305b;
+}
+
+.footer p {
+  color: #ffffff;
+  margin: 15px 0 0 0;
+  font-family: cairo;
+}
+
+/* ------------ Footer End Finalyyyyyyy ------------ */
